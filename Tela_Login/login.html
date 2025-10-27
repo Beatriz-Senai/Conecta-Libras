@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ou cadastro</title>
+    <link rel="stylesheet" href="login.css">
+     <link rel="icon" type="image/png" href="/Conecta-Libras/Imagens/logo.png"> <!-- favicon -->
+</head>
+<body>
+<!-- MENU  -->
+    <!-- POPUP DE LOGOUT -->
+<div id="logout-popup" class="popup-overlay">
+  <div class="popup-content">
+    <h3>Deseja sair da sua conta?</h3>
+    <div class="popup-buttons">
+      <button id="cancel-btn">Cancelar</button>
+      <button id="logout-btn">Sair</button>
+    </div>
+  </div>
+</div>
+
+<!-- Menu fixo -->
+<div class="navbar">
+  <!-- Logo -->
+   <a href="#"><img src="/Conecta-Libras/Imagens/logoextensa.png" alt="Logo Conecta Libras" style="height: 50px;"></a>
+
+  <!-- Botões Pílula -->
+  <button class="pill-button">
+    <span>Início</span>
+    <a href="/Conecta-Libras/inclusao.html" target="_blank">Inclusão</a>
+    <span>Sobre Nós</span>
+  </button>
+
+  <!-- Barra de Pesquisa -->
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Pesquisar...">
+    <img src="/Conecta-Libras/Imagens/pesquisa.png" alt="Pesquisar" class="search-img">
+  </div>
+
+  <!-- Área do Usuário -->
+  <div class="user-section">
+    <span class="user-name" id="user-name">Logado como Beatriz</span>
+    <div class="user-avatar" id="user-avatar" class="avatar">B</div>
+  </div>
+</div>
+<script src="login.js"></script>
+
+
+<!-- PARTE DO LOGIN -->
+<div class="loginECadastro">
+    <form action="">
+        <div class="login">
+        <h1>Entre com sua conta</h1>
+        <h2>Se você já tem uma conta</h2>
+
+        <h3>E-mail</h3>
+        <input type="email" placeholder="E-mail">
+
+        <h3>Senha</h3>
+        <input type="password" placeholder="Senha">
+
+        <button type="submit">Entrar</button>
+    </div>
+
+    <div class="cadastro">
+        <h1>Crie uma conta</h1>
+        <h2>Se você ainda não tem uma conta</h2>
+
+        <div class="nomes">
+            <h3>Nome Completo</h3>
+            <input type="text" placeholder="Escreva seu nome completo">
+
+            <h3>Nome de Usuário</h3>
+            <input type="text" placeholder="Escolha um nome de usuário">
+        </div>
+
+        <div class="emailESenha">
+            <h3>E-mail</h3>
+            <input type="email" placeholder="Insira seu e-mail">
+
+            <h3>Senha</h3>
+            <input type="password" placeholder="Crie uma senha">
+        </div>
+
+        <button type="submit">Criar Conta</button>
+    </div>
+    </form>
+</div>
+</body>
+</html>
